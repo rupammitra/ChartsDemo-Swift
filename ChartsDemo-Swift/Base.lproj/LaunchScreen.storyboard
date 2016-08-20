@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChartsDemo in Swift using danielgindi/Charts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abg-lC-KNW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="N9r-NE-gBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N9r-NE-gBV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="N9r-NE-gBV"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2016 Rupam Mitra. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOX-PD-4tM">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GIN-Wy-k6U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GIN-Wy-k6U"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GIN-Wy-k6U"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Abg-lC-KNW" secondAttribute="trailing" constant="20" id="3Hk-Z6-6RG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OOX-PD-4tM" secondAttribute="bottom" constant="8" id="43q-Y5-jgl"/>
+                            <constraint firstItem="OOX-PD-4tM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="H77-mg-1T3"/>
+                            <constraint firstAttribute="trailing" secondItem="OOX-PD-4tM" secondAttribute="trailing" constant="20" id="I4n-7X-Hcg"/>
+                            <constraint firstItem="Abg-lC-KNW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="UHy-BH-ign"/>
+                            <constraint firstItem="Abg-lC-KNW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VXv-aE-hqB"/>
+                            <constraint firstItem="Abg-lC-KNW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uKs-S0-nbg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Abg-lC-KNW"/>
+                                <exclude reference="OOX-PD-4tM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="43q-Y5-jgl"/>
+                                <exclude reference="3Hk-Z6-6RG"/>
+                                <exclude reference="UHy-BH-ign"/>
+                                <exclude reference="VXv-aE-hqB"/>
+                                <exclude reference="uKs-S0-nbg"/>
+                                <exclude reference="H77-mg-1T3"/>
+                                <exclude reference="I4n-7X-Hcg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Abg-lC-KNW"/>
+                                <include reference="OOX-PD-4tM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="43q-Y5-jgl"/>
+                                <include reference="3Hk-Z6-6RG"/>
+                                <include reference="UHy-BH-ign"/>
+                                <include reference="VXv-aE-hqB"/>
+                                <include reference="uKs-S0-nbg"/>
+                                <include reference="H77-mg-1T3"/>
+                                <include reference="I4n-7X-Hcg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+</document>

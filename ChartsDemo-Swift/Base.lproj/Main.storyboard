@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Lc-HT-I05">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Charts-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ChartsDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csb-kX-eTo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NH4-uc-sh3"/>
+                                </constraints>
+                                <state key="normal" title="Load Data"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NH4-uc-sh3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NH4-uc-sh3"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYB-JC-iXj"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mXh-c1-Uqs">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="XJ6-ya-Qnu"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Bar"/>
+                                    <segment title="Line"/>
+                                    <segment title="Filled Line"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XJ6-ya-Qnu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XJ6-ya-Qnu"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="actionSegmentControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="3We-TK-1iR"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2c-NH-q7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mXh-c1-Uqs" firstAttribute="top" secondItem="csb-kX-eTo" secondAttribute="bottom" constant="8" id="50d-MT-DEZ"/>
+                            <constraint firstItem="r2c-NH-q7Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="EMh-As-i62"/>
+                            <constraint firstAttribute="trailing" secondItem="mXh-c1-Uqs" secondAttribute="trailing" constant="20" id="O84-b6-MHJ"/>
+                            <constraint firstItem="r2c-NH-q7Z" firstAttribute="top" secondItem="mXh-c1-Uqs" secondAttribute="bottom" constant="8" id="Ryb-lc-E4e"/>
+                            <constraint firstItem="csb-kX-eTo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Y0b-jT-HKY"/>
+                            <constraint firstItem="csb-kX-eTo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="aQO-Xh-HOK"/>
+                            <constraint firstItem="mXh-c1-Uqs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gaA-O3-RW0"/>
+                            <constraint firstAttribute="trailing" secondItem="csb-kX-eTo" secondAttribute="trailing" constant="20" id="hqP-d4-xwk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r2c-NH-q7Z" secondAttribute="bottom" constant="20" id="kDs-wv-wxv"/>
+                            <constraint firstAttribute="trailing" secondItem="r2c-NH-q7Z" secondAttribute="trailing" constant="20" id="pR3-Uq-EHM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="csb-kX-eTo"/>
+                                <exclude reference="mXh-c1-Uqs"/>
+                                <exclude reference="r2c-NH-q7Z"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="kDs-wv-wxv"/>
+                                <exclude reference="Y0b-jT-HKY"/>
+                                <exclude reference="aQO-Xh-HOK"/>
+                                <exclude reference="hqP-d4-xwk"/>
+                                <exclude reference="50d-MT-DEZ"/>
+                                <exclude reference="O84-b6-MHJ"/>
+                                <exclude reference="gaA-O3-RW0"/>
+                                <exclude reference="EMh-As-i62"/>
+                                <exclude reference="Ryb-lc-E4e"/>
+                                <exclude reference="pR3-Uq-EHM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="csb-kX-eTo"/>
+                                <include reference="mXh-c1-Uqs"/>
+                                <include reference="r2c-NH-q7Z"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="kDs-wv-wxv"/>
+                                <include reference="Y0b-jT-HKY"/>
+                                <include reference="aQO-Xh-HOK"/>
+                                <include reference="hqP-d4-xwk"/>
+                                <include reference="50d-MT-DEZ"/>
+                                <include reference="O84-b6-MHJ"/>
+                                <include reference="gaA-O3-RW0"/>
+                                <include reference="EMh-As-i62"/>
+                                <include reference="Ryb-lc-E4e"/>
+                                <include reference="pR3-Uq-EHM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Charts" id="fV0-93-Jdd"/>
+                    <connections>
+                        <outlet property="graphContainerView" destination="r2c-NH-q7Z" id="ZdS-7Y-mkk"/>
+                        <outlet property="segmentControl" destination="mXh-c1-Uqs" id="y1R-jp-nET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="132.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="slN-be-Md4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Lc-HT-I05" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fU4-qf-UqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="591-No-Shb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlQ-YG-JF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="133"/>
+        </scene>
+    </scenes>
+</document>
